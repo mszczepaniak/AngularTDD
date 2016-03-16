@@ -1,0 +1,28 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "Movie App",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mszczepaniak/AngularTDD.git"
+  },
+  "keywords": [
+    "movies"
+  ],
+  "author": "Michal Szczepaniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mszczepaniak/AngularTDD/issues"
+  },
+  "homepage": "https://github.com/mszczepaniak/AngularTDD#readme",
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0"
+  }
+}
