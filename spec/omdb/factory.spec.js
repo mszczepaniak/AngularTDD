@@ -4,12 +4,14 @@ describe('omdb service', function() {
     it('should return search movie data', function() {
         var omdbApi = {};
         
-        angular.mock.module({
-            'omdbApi': {
-                search: function(query){
-                    return movieData;
+        angular.mock.module(function($provide){
+            $provide.factory('omdbApi', function(){
+                return {
+                    search: function(query) {
+                        return movieData;
+                    }
                 }
-            }
+            })
         });
         
         angular.mock.inject(function(_omdbApi_) {
